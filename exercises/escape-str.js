@@ -9,13 +9,8 @@
 
 // Your code :
 
-const escapeStr {
-$/ : true,
-$\ : true,
-$` : true,
-$" : true,
-$' : true,
-} 
+const escapeStr = "\/\'\"\`\\"
+
 
 //* Begin of tests
 const assert = require('assert')

@@ -6,9 +6,17 @@
  *
  */
 
+function yell(string){
+	let res=string.toUpperCase();
+	return(res);
+}
 
 //* Begin of tests
 const assert = require('assert')
+assert.strictEqual(typeof yell, 'function')
+assert.strictEqual(yell.length, 1)
+assert.deepStrictEqual(yell('bonjour'), 'BONJOUR')
+assert.deepStrictEqual(yell('ca va'), 'CA VA')
+assert.deepStrictEqual(yell('je danse la zumba'), 'JE DANSE LA ZUMBA')
 
-assert.fail('You must write your own tests')
 // End of tests */

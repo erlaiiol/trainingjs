@@ -6,6 +6,13 @@
  *
  */
 
+function sentence(string){
+	let stringadd=""
+	for (var i = 0; i < string.length; i++) {
+			stringadd=stringadd+string[i]+" "
+		}
+	return((stringadd.trim()))	
+}
 
 //* Begin of tests
 const assert = require('assert')
