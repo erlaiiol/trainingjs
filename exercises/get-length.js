@@ -7,7 +7,11 @@
  * @notions Data-Structures, Get
  */
 
-// Your code :
+// Your code :  
+
+function getLength (number){
+	return(number.length)
+}
 
 //* Begin of tests
 const assert = require('assert')

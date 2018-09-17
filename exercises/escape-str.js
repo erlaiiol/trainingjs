@@ -9,6 +9,14 @@
 
 // Your code :
 
+const escapeStr {
+$/ : true,
+$\ : true,
+$` : true,
+$" : true,
+$' : true,
+} 
+
 //* Begin of tests
 const assert = require('assert')
 

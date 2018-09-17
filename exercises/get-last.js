@@ -9,6 +9,12 @@
 
 // Your code :
 
+function getLast(number){
+	for (var i = 0; i < number.length; i++) {
+	}
+	return(number[(i-1)])
+}
+
 //* Begin of tests
 const assert = require('assert')
 
