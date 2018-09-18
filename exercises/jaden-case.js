@@ -10,10 +10,17 @@
  *
  */
 
+function jadenCase(string) {
+	let res=string.toLowerCase().replace(/\b\w/g, l => l.toUpperCase())
+	return(res)
+}
+
 
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof jadenCase, "function")
+assert.strictEqual(jadenCase('comment vas tu'), 'Comment Vas Tu')
+assert.strictEqual(jadenCase('coMMEnt VAs tU'), 'Comment Vas Tu')
 // End of tests */

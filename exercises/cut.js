@@ -10,8 +10,32 @@
  * https://github.com/nan-academy/refs/blob/master/js-training/methods.md#string---transform
  */
 
+function cutFirst(string) {
+	let res=string.substr(2, string.length);
+	return(res);
+}
+
+function cutLast(string) {
+	let res=string.substr(0, ((string.length)-2));
+	return(res);
+
+}
+
+function cutFirstLast(string){
+	let res=string.substr(2, ((string.length)-4));
+	return(res);
+}
+
 //* Begin of tests
 const assert = require('assert')
+assert.strictEqual(typeof cutFirst, 'function')
+assert.strictEqual(typeof cutLast, 'function')
+assert.strictEqual(typeof cutFirstLast, 'function')
+assert.strictEqual(cutFirst.length, 1)
+assert.strictEqual(cutLast.length, 1)
+assert.strictEqual(cutFirstLast.length, 1)
+assert.deepStrictEqual(cutFirst('quellevie'), 'ellevie')
+assert.deepStrictEqual(cutLast('quellevie'), 'quellev')
+assert.deepStrictEqual(cutFirstLast('quellevie'), 'ellev')
 
-assert.fail('You must write your own tests')
 // End of tests */

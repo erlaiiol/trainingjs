@@ -12,9 +12,31 @@
  *
  */
 
+function keepFirst(string)  {
+	let res=string.substr(0, 2);
+	return(res);
+}
+
+function keepLast(string) {
+	let res=string.substr( ((string.length)-2), 2);
+	return(res);
+}
+
+function keepFirstLast(string) {
+	let res=string.substr(2, 2);
+	return(res);
+}
+
 
 //* Begin of tests
 const assert = require('assert')
-
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof keepFirst, 'function')
+assert.strictEqual(typeof keepLast, 'function')
+assert.strictEqual(typeof keepFirstLast, 'function')
+assert.strictEqual(keepFirst.length, 1)
+assert.strictEqual(keepLast.length, 1)
+assert.strictEqual(keepFirstLast.length, 1)
+assert.deepStrictEqual(keepFirst('quellevie'), 'qu')
+assert.deepStrictEqual(keepLast('quellevie'), 'ie')
+assert.deepStrictEqual(keepFirstLast('quellevie'), 'el')
 // End of tests */
